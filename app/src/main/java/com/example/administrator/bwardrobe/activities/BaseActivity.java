@@ -27,7 +27,7 @@ public abstract class BaseActivity<P extends BasePresenter,M extends BaseModel> 
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         setContentView(getLayoutId());
-        ButterKnife.bind(this);//绑定布局文件
+        ButterKnife.bind(this);
         mContext = this;
         mPresenter = Tutil.getT(this, 0);
         mModel= Tutil.getT(this,1);

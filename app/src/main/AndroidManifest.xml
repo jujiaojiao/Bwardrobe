@@ -11,7 +11,7 @@
         <activity android:name=".activities.MainActivity">
 
         </activity>
-        <activity android:name=".activities.StartActivity">
+        <activity android:name=".activities.StartActivity" android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
